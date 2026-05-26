@@ -84,16 +84,6 @@ Nothing is enabled unless you add Micrometer and call the opt-in helpers.
 ## Dependency
 
 **Maven**
-```xml
-<dependency>
-  <groupId>org.apache.httpcomponents.client5</groupId>
-  <artifactId>httpclient5-observation</artifactId>
-  <version>${httpclient5.version}</version>
-</dependency>
-
-## Dependency
-
-**Maven**
 
 ```xml
 <!-- Required: the optional observability module itself -->
@@ -134,3 +124,4 @@ Nothing is enabled unless you add Micrometer and call the opt-in helpers.
   <version>${micrometer.tracing.version}</version>
   <optional>true</optional>
 </dependency>
+```

@@ -37,6 +37,8 @@ Documentation
 
 1. Guides
     * [SSE](server-sent-events.md) - Server side events
+    * [Jakarta REST client](rest-client.md) - Type-safe Jakarta REST client backed by HttpClient
+    * [WebSocket](websocket.md) - Full-duplex messaging over HTTP/1.1 and HTTP/2
 
 1. Javadocs
 
@@ -45,6 +47,8 @@ Documentation
     * [HttpClient Cache](./current/httpclient5-cache/apidocs/)
     * [HttpClient Observation](./current/httpclient5-observation/apidocs/)
     * [HttpClient SSE](./current/httpclient5-sse/apidocs/)
+    * [HttpClient Jakarta REST](./current/httpclient5-jakarta-rest-client/apidocs/)
+    * [HttpClient WebSocket](./current/httpclient5-websocket/apidocs/)
 
 1. API compatibility reports
 
@@ -76,6 +80,8 @@ Features
 - Optional Observability nodule with Micrometer / OpenTelemetry support for request timers/counters,
 - Optional Server-Sent Events (SSE) module for consuming long-lived event
   streams over HTTP/1.1 and HTTP/2 using the async transport.
+- Optional WebSocket module for full-duplex messaging over HTTP/1.1 (Upgrade)
+  and HTTP/2 (Extended CONNECT), with optional permessage-deflate compression.
 - Source code is freely available under the Apache License.
 
 
@@ -100,3 +106,6 @@ the internet at large:
 - [RFC 9218](https://datatracker.ietf.org/doc/html/rfc9218) - Extensible Prioritization Scheme for HTTP
 - [RFC 7804](https://datatracker.ietf.org/doc/html/rfc7804) - Salted Challenge Response HTTP Authentication Mechanism
 - [RFC 8297](https://datatracker.ietf.org/doc/html/rfc8297) – Early Hints status code
+- [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455) - The WebSocket Protocol
+- [RFC 7692](https://datatracker.ietf.org/doc/html/rfc7692) - Compression Extensions for WebSocket (permessage-deflate)
+- [RFC 8441](https://datatracker.ietf.org/doc/html/rfc8441) - Bootstrapping WebSockets with HTTP/2
